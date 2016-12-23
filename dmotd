@@ -1,5 +1,8 @@
 #!/bin/bash
 ## D.C. Noye 2016
+### Latest version of script found here: 
+#### https://github.com/dcnoye/dmotd
+
 PROCCOUNT=`ps -Afl | wc -l`
 PROCCOUNT=`expr $PROCCOUNT - 5`
 DIR=`dirname "$0"`
