@@ -1,7 +1,11 @@
 
-dmotd is a custom / semi dynamic motd, written to help identify items on a linux box upon login.
+dmotd is a custom / semi dynamic motd(message of the day),
+written to help identify items on a linux box upon login.
 
- == Instructions ==
+The included version currently is tailored to a centos/redhat system with openVZ containers, but is easily modified to run on any nix based os.
+
+
+Instructions
 
 cd /usr/local/sbin/
 
@@ -9,6 +13,6 @@ git clone https://github.com/dcnoye/dmotd.git
 
 crontab -e
 
-then add that following:
+Then add that following:
 
-*/15 * * * * /usr/local/sbin/dmotd > /etc/motd 2>&1
+*/5 * * * * /usr/local/sbin/dmotd/dmotd > /etc/motd 2>&1
